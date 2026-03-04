@@ -71,7 +71,9 @@ module "gke" {
   // allows for network policy logging of allowed and denied requests to Pods.
   datapath_provider = var.datapath_provider
 
-  maintenance_start_time = var.maintenance_start_time
+  maintenance_start_time  = var.maintenance_start_time
+  maintenance_end_time    = var.maintenance_end_time
+  maintenance_recurrence  = var.maintenance_recurrence
 
   initial_node_count = var.initial_node_count
 
